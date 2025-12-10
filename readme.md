@@ -6,4 +6,10 @@ This folder contains different widgets that I personally may use on a daily basi
 
 If you don't have ttkbootstrap installed, what are you doing?
 
-If you do, however, you must create a shortcut for each widget and paste it in the startup folder using Win + R and the "shell:startup" command.
+## Windows
+
+Create a shortcut for the .bat file, copy it, open the "Execute" menu with Win + R, type "shell:startup", hit Enter and paste the file.
+
+## Linux
+
+It don't even work in Linux; I'll get around to fixing it *later...+
