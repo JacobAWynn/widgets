@@ -1,0 +1,6 @@
+openmeteo_requests
+os
+subprocess
+time
+tkinter
+ttkbootstrap
