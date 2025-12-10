@@ -12,4 +12,5 @@ Create a shortcut for the .bat file, copy it, open the "Execute" menu with Win +
 
 ## Linux
 
-It don't even work in Linux; I'll get around to fixing it *later...+
+It don't even work in Linux; I'll get around to fixing it *later...*
+
