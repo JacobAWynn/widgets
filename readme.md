@@ -1,10 +1,8 @@
 # Widgets folder
 
-This folder contains different widgets that I personally may use on a daily basis. You are free to create your own widgets using Python and the ttkbootstrap library.
+This folder contains different widgets that I personally may use on a daily basis. You are free to create your own widgets using Python and the tkinter / ttk library.
 
 # How to use
-
-If you don't have ttkbootstrap installed, what are you doing?
 
 ## Windows
 
@@ -13,4 +11,5 @@ Create a shortcut for the .bat file, copy it, open the "Execute" menu with Win +
 ## Linux
 
 It don't even work in Linux; I'll get around to fixing it *later...*
+
 
