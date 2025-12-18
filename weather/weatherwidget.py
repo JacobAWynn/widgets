@@ -1,8 +1,8 @@
 #!usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-import tkinter
-import ttkbootstrap as ttk
+import tkinter as tk
+from tkinter import ttk
 import openmeteo_requests
 import os
 
@@ -92,10 +92,7 @@ currcodefloat = curr.Variables(2).Value()
 currcode = int(currcodefloat)
 
 # $createwin
-try:
-    weather_root = ttk.Window(themename = "lightmaterial2" if currisday == "day" else "darkmaterial2")
-except tkinter.TclError:
-    weather_root = ttk.Window(themename = "litera" if currisday == "day" else "darkly")
+weather_root = tk.Tk()
 weather_root.overrideredirect(1)
 weather_root.geometry("200x250+400+0")
 
@@ -110,11 +107,6 @@ def refresh():
     currtemp = int(currtempfloat)
     currcodefloat = curr.Variables(2).Value()
     currcode = int(currcodefloat)
-    style = ttk.Style()
-    try:
-        style.theme_use("lightmaterial2" if currisday == "day" else "darkmaterial2")
-    except tkinter.TclError:
-        style.theme_use("litera" if currisday == "day" else "darkly")
     temperature_l.config(text = f"{currtemp} °C")
     temperature_l.after(900000, refresh)
     weathericon_ph.config(file = f"{script_directory}\\data\\{code_int_to_png[currcode + (1 - int(currisdayfloat)) * 100]}.png")
@@ -125,7 +117,7 @@ temperature_l = ttk.Label(master = weather_root, font = "Ubuntu 24")
 temperature_l.pack()
 
 # $weathericon
-weathericon_ph = ttk.PhotoImage()
+weathericon_ph = tk.PhotoImage()
 weathericon_l = ttk.Label(master = weather_root, image = weathericon_ph)
 weathericon_l.pack()
 
