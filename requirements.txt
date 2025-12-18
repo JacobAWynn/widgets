@@ -3,4 +3,3 @@ os
 subprocess
 time
 tkinter
-ttkbootstrap
