@@ -1,9 +1,8 @@
 #!usr/bin/python3
 # -*- coding: UTF-8 -*-
 
-import tkinter
-import ttkbootstrap as ttk
-import time
+import tkinter as tk
+from tkinter import ttk
 import os
 
 # $filepath
@@ -28,10 +27,7 @@ def currdotbeattime():
     dotbeattime_l.after(144, currdotbeattime)
 
 # $createwin
-try:
-    dotbeat_root = ttk.Window(themename = "darkmaterial2")
-except tkinter.TclError:
-    dotbeat_root = ttk.Window(themename = "darkly")
+dotbeat_root = tk.Tk()
 dotbeat_root.overrideredirect(1)
 dotbeat_root.geometry("400x150")
 
